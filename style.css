@@ -36,10 +36,10 @@ a{
     gap: 1.5rem;
 }
 .footerBox{
-    background-color: black;
+    background: linear-gradient(to right, #E50914, #FF9900, #4267B2);
     color: white;
     text-align: center;
-
+    padding: 20px;
 }
 .contentBox{
     width: 70%;
@@ -47,8 +47,9 @@ a{
     border: 2px solid black;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 5rem;
     padding: 3rem;
+    box-shadow: 2px 2px 30px rgb(207, 106, 106);
 }
 img{
     width: 400px;
@@ -70,9 +71,43 @@ main{
 .leftBox h2{
     font-size: 2rem;
 }
+.rightBox{
+    position: relative;
+    text-overflow: hidden;
+    transition: all 0.3s linear 0s;
+}
+.rightBox:hover{
+    transform: scale(1.2);
+    box-shadow: 2px 2px 20px gold;
+    filter: brightness(1.2);
+}
 .ingBox{
     font-size: 1.5rem;
 }
 .recBox{
     font-size: 1.5rem;
+}
+
+.rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #909ebb67;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    opacity:0;
+    transition: all 0.3s linear 0s;
+}
+
+.rightBox .overlay span{
+    color: azure;
+}
+
+.rightBox:hover .overlay{
+    opacity: 1;
 }
