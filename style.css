@@ -41,3 +41,38 @@ a{
     text-align: center;
 
 }
+.contentBox{
+    width: 70%;
+    margin: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+}
+img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+}
+main{
+    margin: 20px;
+}
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftBox h2{
+    font-size: 2rem;
+}
+.ingBox{
+    font-size: 1.5rem;
+}
+.recBox{
+    font-size: 1.5rem;
+}
