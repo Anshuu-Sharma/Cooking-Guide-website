@@ -35,3 +35,9 @@ a{
     display: flex;
     gap: 1.5rem;
 }
+.footerBox{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
